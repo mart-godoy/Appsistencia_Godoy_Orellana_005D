@@ -1,0 +1,40 @@
+
+.title1{
+    color: yellow;
+
+}
+
+.header1{
+    --background:#012c56;
+    --border-color:#012c56;
+}
+
+h5{
+    color: black;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 20ch;
+
+    animation: typing 2s steps(20), blink .5s infinite step-end alternate;
+    overflow:hidden;
+    }
+
+@keyframes typing {
+
+    from { width: 0}
+    }
+
+@keyframes blink {
+ 50% { border-color: transparent}
+}
+
+p{color: black;
+    text-align: center;
+}
+
+.ic{
+    border-radius: 2vh;
+    box-shadow: 1px  1px 10px rgb(0, 0, 0);
+}

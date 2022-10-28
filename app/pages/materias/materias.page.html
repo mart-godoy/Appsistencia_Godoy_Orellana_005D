@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar class="header1">
+     <ion-buttons slot="start">
+       <ion-button (click)="mostrarMenu()">
+         <ion-icon slot="start" name="menu-outline" color="primary"></ion-icon>
+        </ion-button>
+     </ion-buttons>
+
+    <ion-title class="title1">Asignaturas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>Porcentaje de asistencia</p>
+  
+  <ion-card>
+    <ion-item class="label">
+      <ion-label>Ingles 90%</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-progress-bar value="0.9"></ion-progress-bar>
+
+      <ion-button routerLink="/scanear">
+        <ion-icon name="qr-code-sharp"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item class="label">
+      <ion-label>Programación 100%</ion-label>
+    </ion-item>
+
+    <ion-item >
+      <ion-progress-bar value="1"></ion-progress-bar>
+
+      <ion-button routerLink="/scanear">
+        <ion-icon name="qr-code-sharp"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item class="label">
+      <ion-label>Calidad 100%</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-progress-bar value="1"></ion-progress-bar>
+      <ion-button routerLink="/scanear">
+        <ion-icon name="qr-code-sharp"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item class="label">
+      <ion-label>Arquitectura 90%</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-progress-bar value="0.9"></ion-progress-bar>
+
+      <ion-button routerLink="/scanear">
+        <ion-icon name="qr-code-sharp"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item class="label">
+      <ion-label>Estadistica 90%</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-progress-bar value="0.9"></ion-progress-bar>
+
+      <ion-button routerLink="/scanear">
+        <ion-icon name="qr-code-sharp"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item class="label">
+      <ion-label>Etica 100%</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-progress-bar value="1"></ion-progress-bar>
+
+      <ion-button routerLink="/scanear">
+        <ion-icon name="qr-code-sharp"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+  </ion-card>
+
+  
+</ion-content>

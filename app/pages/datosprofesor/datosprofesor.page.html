@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar class="header1">
+    <ion-buttons slot="start">
+      <ion-back-button 
+          defaultHref="/"
+          text=""
+          color="primary"
+          mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="title1">Datos</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-card class="ic">
+  <ion-avatar class="ia">
+    <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+  </ion-avatar>
+  <h5>Nombre: {{obtenernombre()}}</h5>
+  <h5>Correo: {{obtenercorreo()}}</h5>
+</ion-card>
+</ion-content>

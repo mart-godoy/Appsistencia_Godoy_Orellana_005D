@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar class="ict">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card class="ic">
+
+
+    <ion-card-content>
+        <form [formGroup]="formularioLogin">
+
+          <ion-item>
+            <ion-label position="floating">Correo: </ion-label>
+            <ion-input type="email" formControlName="correo"></ion-input>
+          </ion-item>
+
+          <p class="text-danger" *ngIf="formularioLogin.controls['correo'].dirty && formularioLogin.controls['correo'].errors?.required">*Debe ingresar el correo</p>
+
+          <ion-item>
+            <ion-label position="floating">Password: </ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+              <p class="text-danger" *ngIf="formularioLogin.controls['password'].dirty && formularioLogin.hasError('required', 'password')">*Debe ingresar la contraseña</p>
+
+        </form>
+        <br>
+        <ion-button (click)="Ingresar()" expand="block" fill="outline" shape="round">
+          Ingresar
+        </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="if">
+    <ion-buttons slot="end">
+      <ion-button [routerLink] = "['/crearcuenta']">Registrarse</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

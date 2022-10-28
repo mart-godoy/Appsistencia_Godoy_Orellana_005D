@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar  class="header1">
+    <ion-buttons slot="start">
+      <ion-back-button 
+          defaultHref="/inicio"
+          text=""
+          color="primary"
+          mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title  class="title1">Iniciar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Inicio profesor-->
+  <ion-card>  
+    <ion-card-content>
+      <img src="assets/profesor.jpg" alt="">
+      <ion-button routerLink="/correoprofesor">
+        Iniciar como profesor
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <!--inicio alumno-->
+  <ion-card>
+    <img src="assets/universitarios.jpg" alt="">
+    <ion-card-content>
+      <ion-button routerLink="/correoalumno">
+        Iniciar como alumno
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

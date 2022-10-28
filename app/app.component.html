@@ -1,0 +1,54 @@
+<ion-app>
+
+  <ion-menu contentId="main" menuId="custom" side="start" >
+    <ion-header>
+      <ion-toolbar class="header1">
+        <ion-title class="title1">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+   
+      <ion-list>
+        <ion-menu-toggle *ngFor="let c of componentes">
+          <ion-item [routerLink]="c.redirecTo" detail=true>
+             <ion-icon slot="start" [name]="c.icon" color="primary"></ion-icon>
+             {{ c.name }}
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <ion-button (click)="logout()" expand="block" fill="clear" shape="round">
+        Cerrar sesión
+      </ion-button>
+
+    </ion-content>
+  </ion-menu>
+
+  <ion-menu contentId="main2" menuId="second" side="start" >
+    <ion-header>
+      <ion-toolbar class="header1">
+        <ion-title class="title1">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+   
+      <ion-list>
+        <ion-menu-toggle *ngFor="let c of componentes2">
+          <ion-item [routerLink]="c.redirecTo" detail=true>
+             <ion-icon slot="start" [name]="c.icon" color="primary"></ion-icon>
+             {{ c.name }}
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+      <ion-button (click)="logout()" expand="block" fill="clear" shape="round">
+        Cerrar sesión
+      </ion-button>
+    </ion-content>
+  </ion-menu>
+
+
+  <ion-router-outlet id="main2"></ion-router-outlet>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
